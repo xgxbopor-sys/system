@@ -4,7 +4,7 @@ from firebase_admin import credentials, db
 
 # 1. Carga la llave privada (debe estar en el mismo repo en Render)
 # Cambia "nombre-de-tu-archivo-json.json" por el nombre real de tu archivo de Firebase
-cred = credentials.Certificate("nombre-de-tu-archivo-json.json")
+cred = credentials.Certificate("firebase-key.json")
 
 # 2. Inicializa Firebase
 firebase_admin.initialize_app(cred, {
